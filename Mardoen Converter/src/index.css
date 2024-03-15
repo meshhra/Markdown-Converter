@@ -62,9 +62,32 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
 }
-
 
 main {
     background-color: red;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section {
+    height: 100%;
+    display: inline;
+}
+
+#editor-section {
+    background-color: blue;
+}
+
+#preview-section {
+    background-color: magenta;
+}
+
+#editor {
+    border: none;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
 }

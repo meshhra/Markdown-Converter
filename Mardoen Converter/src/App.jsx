@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-import DOMPurify from 'isomorphic-dompurify';
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
 function App() {
   const [editorValue, setEditorValue] = useState("");
   return (
@@ -29,10 +30,14 @@ function Editor({ editorValue, setEditorValue }) {
   );
 }
 
-function Preview({editorValue}) {
-  return <section id="preview-section">
-    <div id="preview">{DOMPurify.sanitize(marked.parse(editorValue))}</div>
-  </section>
+function Preview({ editorValue }) {
+  const gfmRenderer = remarkGfm;
+  const clean = <ReactMarkdown remarkPlugins={[gfmRenderer]}>{editorValue}</ReactMarkdown>;
+  return (
+    <section id="preview-section">
+      <div id="preview">{clean}</div>
+    </section>
+  );
 }
 
 export default App;
