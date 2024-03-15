@@ -1,0 +1,70 @@
+:root {
+  --text-50: #f2f2f3;
+  --text-100: #e4e4e7;
+  --text-200: #cacace;
+  --text-300: #afafb6;
+  --text-400: #95959d;
+  --text-500: #7a7a85;
+  --text-600: #62626a;
+  --text-700: #494950;
+  --text-800: #313135;
+  --text-900: #18181b;
+  --text-950: #0c0c0d;
+
+  --background-50: #f0f1f4;
+  --background-100: #e1e3ea;
+  --background-200: #c3c6d5;
+  --background-300: #a5aac0;
+  --background-400: #888daa;
+  --background-500: #6a7195;
+  --background-600: #555a77;
+  --background-700: #3f445a;
+  --background-800: #2a2d3c;
+  --background-900: #15171e;
+  --background-950: #0b0b0f;
+
+  --primary-50: #eef0f6;
+  --primary-100: #dee1ed;
+  --primary-200: #bcc3dc;
+  --primary-300: #9ba5ca;
+  --primary-400: #7987b9;
+  --primary-500: #5869a7;
+  --primary-600: #465486;
+  --primary-700: #353f64;
+  --primary-800: #232a43;
+  --primary-900: #121521;
+  --primary-950: #090b11;
+
+  --secondary-50: #edeff8;
+  --secondary-100: #dadff1;
+  --secondary-200: #b6bfe2;
+  --secondary-300: #919fd4;
+  --secondary-400: #6c80c6;
+  --secondary-500: #4760b8;
+  --secondary-600: #394d93;
+  --secondary-700: #2b396e;
+  --secondary-800: #1d2649;
+  --secondary-900: #0e1325;
+  --secondary-950: #070a12;
+
+  --accent-50: #ebeef9;
+  --accent-100: #d7def4;
+  --accent-200: #afbde9;
+  --accent-300: #889cdd;
+  --accent-400: #607bd2;
+  --accent-500: #3859c7;
+  --accent-600: #2d489f;
+  --accent-700: #223677;
+  --accent-800: #162450;
+  --accent-900: #0b1228;
+  --accent-950: #060914;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+main {
+    background-color: red;
+}
