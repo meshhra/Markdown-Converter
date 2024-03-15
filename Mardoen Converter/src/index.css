@@ -58,44 +58,80 @@
   --accent-800: #162450;
   --accent-900: #0b1228;
   --accent-950: #060914;
+
+  font-size: 18px;
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+
+  background-color: var(--background-900);
+  color: var(--text-200);
 }
 
 main {
-    background-color: red;
-    height: 100dvh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
 }
 
 section {
-    height: 100dvh;
-    display: inline;
-    overflow: auto;
-    padding: 1rem;
-    box-sizing: border-box;
+  height: 100dvh;
+  display: inline;
+  overflow: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+
+.divide {
+  height: 100dvh;
+  width: 5px;
+  background-color: var(--background-950);
+}
+
+textarea {
+    font-family: unset;
+    font-size: unset;
 }
 
 #editor-section {
-    background-color: blue;
-}
-
-#preview-section {
-    background-color: magenta;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 #editor {
-    border: none;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    resize: none;
+  border: none;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  background-color: transparent;
+  color: var(--text-200);
 }
 
 img {
-    width: 100%;
+  width: 100%;
+}
+
+pre,
+code {
+  background-color: var(--background-600);
+}
+
+pre {
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: auto;
+}
+td, th {
+    border: 2px solid var(--text-100);
+    text-align: center;
+    padding: 0.4rem;
+}
+
+a {
+    color: var(--accent-500);
 }
