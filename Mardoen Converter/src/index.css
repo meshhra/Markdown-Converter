@@ -67,7 +67,7 @@ body {
 
 main {
     background-color: red;
-    min-height: 100dvh;
+    height: 100dvh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -90,4 +90,5 @@ section {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+    resize: none;
 }
