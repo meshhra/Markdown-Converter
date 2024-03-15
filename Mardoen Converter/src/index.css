@@ -135,3 +135,9 @@ td, th {
 a {
     color: var(--accent-500);
 }
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns: unset;
+    }
+}
